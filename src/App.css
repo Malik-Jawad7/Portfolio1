@@ -145,8 +145,8 @@ body {
 }
 
 .home-content-image img {
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 470px;
   border-radius: 50%;
   object-fit: cover;
   animation: zoomIn 1.4s ease forwards;
