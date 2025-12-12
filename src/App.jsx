@@ -4,7 +4,7 @@ import "boxicons/css/boxicons.min.css";
 import Typed from "typed.js";
 
 // Images
-import Khalid from "./assets/khalid-compressed.png";
+import Khalid from "./assets/khalid.png";
 import HTML from "./assets/html.png";
 import CSSimg from "./assets/css.png";
 import JS from "./assets/js.png";
@@ -200,4 +200,5 @@ const App = () => {
 };
 
 export default App;
+
 
