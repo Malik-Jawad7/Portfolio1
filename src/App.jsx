@@ -4,7 +4,7 @@ import "boxicons/css/boxicons.min.css";
 import Typed from "typed.js";
 
 // Images
-import Khalid from "./assets/Khalid.JPG";
+import Khalid from "./assets/khalid.png";
 import HTML from "./assets/html.png";
 import CSSimg from "./assets/css.png";
 import JS from "./assets/js.png";
@@ -46,7 +46,9 @@ const App = () => {
   return (
     <>
       <header className="header">
-        <a href="#" className="logo"><h1>Portfolio.</h1></a>
+        <a href="#" className="logo">
+          <h1>Portfolio.</h1>
+        </a>
 
         <nav className="Navbar">
           <a href="#" className="active">Home</a>
@@ -69,7 +71,6 @@ const App = () => {
 
             <p>
               I'm a motivated fresher learning web development.
-              <br />
               I enjoy building projects & improving my skills.
             </p>
 
@@ -98,9 +99,8 @@ const App = () => {
           <h2>About <span>Me</span></h2>
           <h4>MERN Stack Developer</h4>
           <p>
-   I’m a fresher MERN Stack Developer with a strong interest in full-stack web development.
-I learn quickly, enjoy solving problems, and love turning ideas into functional and beautiful web applications.
-Every day, I aim to learn something new and grow as a developer.
+            I’m a fresher MERN Stack Developer who loves creating modern web applications.
+            I enjoy solving problems and building projects using 
             <span> HTML, CSS, JavaScript, React.</span>
           </p>
 
@@ -113,8 +113,6 @@ Every day, I aim to learn something new and grow as a developer.
         <h1 className="sub-tittle">My <span>Skills</span></h1>
 
         <div className="Technical-bars">
-
-          {/* Linear Skills */}
           {skills.map((skill) => (
             <div className="bar" key={skill.name}>
               <div className="info">
@@ -130,10 +128,8 @@ Every day, I aim to learn something new and grow as a developer.
             </div>
           ))}
 
-          {/* Professional Circular Skills */}
           <div className="container1">
             <h1>Professional Skills</h1>
-
             <div className="circle-wrapper">
               {proSkills.map((s) => (
                 <div
@@ -150,50 +146,57 @@ Every day, I aim to learn something new and grow as a developer.
                 </div>
               ))}
             </div>
-
           </div>
         </div>
       </section>
-      {/* Contact Section */}
 
-{/* Contact Section with Form */}
-<section className="contact-section" id="contact">
-  <h2>Get In Touch</h2>
-  <p>
-    I’m a fast learner and open to opportunities. You can reach me via email, phone, or by filling the form below.
-  </p>
-  <p>Phone: +92 331 1367234</p>
+      {/* CONTACT SECTION (COMBINED VERSION) */}
+      <section className="contact-section" id="contact">
+        <h2>Let's Work Together</h2>
+        <p>
+          I'm open to opportunities, freelance projects, collaborations, or even just a friendly chat.
+          Feel free to reach out!
+        </p>
 
-  <form className="contact-form" onSubmit={(e) => { e.preventDefault(); alert("Message sent!"); }}>
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit" className="contact-btn">Submit</button>
-  </form>
-</section>
-<section className="contact-section" id="contact">
-  <h2>Let's Work Together</h2>
-  <p>
-    I'm a fast learner and open to opportunities, freelance projects, or just to connect. 
-    Feel free to reach out!
-  </p>
+        {/* Contact Buttons */}
+        <div className="contact-buttons">
+          <a href="mailto:khalid094p@gmail.com" className="contact-btn">
+            <i className="bx bx-envelope"></i> Email Me
+          </a>
+          <a
+            href="https://www.linkedin.com/in/malik-khalid-1209b4334/"
+            target="_blank"
+            rel="noreferrer"
+            className="contact-btn"
+          >
+            <i className="bx bxl-linkedin"></i> LinkedIn
+          </a>
+          <a
+            href="https://github.com/Malik-Jawad7?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+            className="contact-btn"
+          >
+            <i className="bx bxl-github"></i> GitHub
+          </a>
+        </div>
 
-  <div className="contact-buttons">
-    <a href="mailto:khalid094p@gmail.com" className="contact-btn">
-      <i className="bx bx-envelope"></i> Email Me
-    </a>
-    <a href="https://www.linkedin.com/in/malik-khalid-1209b4334/" target="_blank" rel="noreferrer" className="contact-btn">
-      <i className="bx bxl-linkedin"></i> LinkedIn
-    </a>
-    <a href="https://github.com/Malik-Jawad7?tab=repositories" target="_blank" rel="noreferrer" className="contact-btn">
-      <i className="bx bxl-github"></i> GitHub
-    </a>
-  </div>
-</section>
-
-
+        {/* Form */}
+        <form
+          className="contact-form"
+          onSubmit={(e) => {
+            e.preventDefault();
+            alert("Message sent!");
+          }}
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" className="contact-btn">Submit</button>
+        </form>
+      </section>
     </>
   );
 };
 
-export default App;  
+export default App;
