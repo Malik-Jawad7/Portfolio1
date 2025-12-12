@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+﻿import React, { useEffect } from "react";
 import "./App.css";
 import "boxicons/css/boxicons.min.css";
 import Typed from "typed.js";
 
 // Images
-import Khalid from "./assets/khalid.png";
+import Khalid from "./assets/khalid-compressed.png";
 import HTML from "./assets/html.png";
 import CSSimg from "./assets/css.png";
 import JS from "./assets/js.png";
@@ -99,7 +99,7 @@ const App = () => {
           <h2>About <span>Me</span></h2>
           <h4>MERN Stack Developer</h4>
           <p>
-            I’m a fresher MERN Stack Developer who loves creating modern web applications.
+            Iâ€™m a fresher MERN Stack Developer who loves creating modern web applications.
             I enjoy solving problems and building projects using 
             <span> HTML, CSS, JavaScript, React.</span>
           </p>
@@ -200,3 +200,4 @@ const App = () => {
 };
 
 export default App;
+
